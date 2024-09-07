@@ -12,7 +12,7 @@ function useGetAllMessage() {
 
         const fetchAllMessage = async () => {
             try {
-                const res = await axios.get(`http://localhost:8000/api/v1/message/all/${selectedUser?._id}`, { withCredentials: true });
+                const res = await axios.get(`https://insta-mern-tsir.onrender.com/api/v1/message/all/${selectedUser?._id}`, { withCredentials: true });
                 console.log("API response:", res.data.messages); 
                 if (res.data.success) {
 

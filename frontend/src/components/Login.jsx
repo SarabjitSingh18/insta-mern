@@ -28,7 +28,7 @@ function Login() {
         try {
             setLoading(true)
             //make a post request needs a serverurl , data , headers, WithCreadentials:true
-            const res = await axios.post('http://localhost:8000/api/v1/user/login', input, {
+            const res = await axios.post('https://insta-mern-tsir.onrender.com/api/v1/user/login', input, {
                 headers: {
                     'Content-Type': 'application/json'
                 },

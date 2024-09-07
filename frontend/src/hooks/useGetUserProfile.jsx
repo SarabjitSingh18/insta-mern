@@ -9,7 +9,7 @@ const useGetUserProfile = (userId) => {
         const fetchUserProfile = async () => {
 
             try {
-                const res = await axios(`http://localhost:8000/api/v1/user/${userId}/profile`, { withCredentials: true })
+                const res = await axios(`https://insta-mern-tsir.onrender.com/api/v1/user/${userId}/profile`, { withCredentials: true })
                 if (res.data.success) {
                     console.log(res.data)
                     console.log(res.data.user)
